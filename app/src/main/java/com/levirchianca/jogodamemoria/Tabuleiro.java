@@ -9,6 +9,14 @@ import java.util.Random;
  * Created by Aluno on 24/08/2016.
  */
 public class Tabuleiro {
+    int matriz [][] = new int [5][5];
+
+       public Tabuleiro(int matriz[][]){
+           this.matriz = matriz;
+           PreencherTabuleiro();
+
+
+    }
 
 
         public static final int TAMANHO_TABULEIRO_L = 5;
@@ -65,6 +73,7 @@ public class Tabuleiro {
         geraId();
 
         for( int i=0 ; i<=listaSorteio.size();i++) {
+
             pos = listaSorteio.get(i);
             tabuleiro[pos / 10][pos % 10] = listaImagem.get(i);
         }
