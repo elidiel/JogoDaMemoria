@@ -17,8 +17,10 @@ public class Tabuleiro {
 
         int[][] tabuleiro = new int[TAMANHO_TABULEIRO_L][TAMANHO_TABULEIRO_A];
         ArrayList<Integer> listaSorteio = new ArrayList<Integer>(TAMANHO_TABULEIRO_L*TAMANHO_TABULEIRO_A);
+        ArrayList<Integer> listaImagem= new ArrayList<Integer>(TAMANHO_TABULEIRO_L*TAMANHO_TABULEIRO_A);
 
-        public void inicializaListaSorteio(){
+
+    public void inicializaListaSorteio(){
             for (int k = 0; k< TAMANHO_TABULEIRO_L * TAMANHO_TABULEIRO_A; k++) {
                 listaSorteio.add((Integer)(k/TAMANHO_TABULEIRO_L)*10 + k%TAMANHO_TABULEIRO_L) ;
                 Log.i("TESTE_", "ListaSorteio["+k+"] = "+listaSorteio.get(k));
@@ -45,9 +47,29 @@ public class Tabuleiro {
 
 
         }
+    public void geraId(){
+        int coringa = 13;
+        for(int i=0;i<=listaImagem.size()-1; i = i+2){
+          listaImagem.set(i,i);
+          listaImagem.set(i+1,i + 1);
+
+        }
+        listaImagem.set(25,coringa) ;
+
 
 
     }
+    public void PreencherTabuleiro(){
+        int pos;
+
+        for( int i=0 ; i<=listaSorteio.size();i++)
+         pos=listaSorteio.get(i);
+
+
+    }
+
+
+}
 
 
 
