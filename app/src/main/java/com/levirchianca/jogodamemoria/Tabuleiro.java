@@ -60,10 +60,14 @@ public class Tabuleiro {
 
     }
     public void PreencherTabuleiro(){
-        int pos;
+        int pos=0;
+        realizaSorteio();
+        geraId();
 
-        for( int i=0 ; i<=listaSorteio.size();i++)
-         pos=listaSorteio.get(i);
+        for( int i=0 ; i<=listaSorteio.size();i++) {
+            pos = listaSorteio.get(i);
+            tabuleiro[pos / 10][pos % 10] = listaImagem.get(i);
+        }
 
 
     }
