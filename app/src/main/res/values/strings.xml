@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">JogoDamemoria</string>
+    <string name="bemvindo">Bem-vindo ao jogo da memória!</string>
+    <string name="qtdjogadores">Número de jogadores</string>
+    <string name="jogador1">Jogador 1</string>
+    <string name="jogador2">Jogador 2</string>
+    <string name="jogador3">Jogador 3</string>
+    <string name="jogador">Jogador: </string>
+    <string name="btiniciar">Iniciar</string>
+    <string name="btFechar">Fechar</string>
+    <string name="Fim">Fim do Jogo!</string>
+    <string name="Venceu">, venceu !</string>
+    <string name="jogador4">Jogador 4</string>
+    <string name="Placar">O placar atual é</string>
+    <string name="reiniciar">jogar novamente</string>
+    <string name="NovoJogo">Novo Jogo</string>
+    <string name="Sair"> Sair</string>
 </resources>
